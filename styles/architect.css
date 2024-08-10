@@ -220,6 +220,21 @@ main > section{
     filter: grayscale(100%);
 }
 
+
+/* design footer section */
+.footer-description{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 38px 0px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.footer-title{
+    background-color: #FFF4E7;
+    margin: 100px 0px;
+}
+
 /* Responsive media quary small device */
 @media screen and (max-width: 576px) {
     .navbar, 
