@@ -38,6 +38,14 @@
     border-radius: 8px;
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
+
 /* ______________________________________________________________________ */
 /* header design */
 
@@ -83,11 +91,64 @@
     width: 100%;
 }
 
+.teams{
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 100px;
+    max-width: 530px;
+}
+
+.features-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#Quick-list{
+    font-weight: 500;
+}
+#features{
+    color: rgba(255, 144, 14, 1);
+}
 
 /* Responsive media quary small device */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, 
+    .nav-links,
+    .teams{
         flex-direction: column;
     }
+    .banner-content{
+        width: 100%;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+    main > section{
+        margin-top: 20px;
+    }
 }
-/* ______________________________________________________________________ */
+
+
+/* medium devic */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+}
+
+
+
